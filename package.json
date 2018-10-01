@@ -1,0 +1,24 @@
+{
+  "name": "solidity-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start-ganache": "ganache-cli --networkId 1234567 --blockTime=0.1 -p 8545 -m \"tumble gas embody bright agree pony smoke laptop index sight shallow hungry\"",
+    "lint-sol": "solhint \"contracts/**/*.sol\"",
+    "test": "truffle test --network development",
+    "test-coverage": "solidity-coverage",
+    "complie": "yarn lint-sol && truffle complie",
+    "deploy": "yarn lint-sol && truffle migrate"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "ganache-cli": "^6.1.8",
+    "truffle-hdwallet-provider": "^0.0.6",
+    "web3": "^1.0.0-beta.36"
+  },
+  "devDependencies": {
+    "solidity-coverage": "^0.5.11",
+    "truffle-assertions": "^0.5.0"
+  }
+}
