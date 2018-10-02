@@ -11,7 +11,9 @@ class AppGenerator extends Generator {
   writing() {
     console.log("this.sourceRoot()", this.sourceRoot());
     fs.readdir(this.sourceRoot(), (err, items) => {
-      const excluedFiles = ["node_modules", "build", "coverage", "coverage.json", ".env.truffle.local", ".git", "generators"];
+      const excluedFiles = ["node_modules", "build", "coverage", "coverage.json",
+        ".env.truffle.local", ".git", "generators", "README.md"
+      ];
       console.log("items", items);
       items.filter(item => !excluedFiles.includes(item)).forEach(item => {
         const filePath = this.templatePath(item);

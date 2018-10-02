@@ -27,7 +27,7 @@ jobs:
           key: v2-dependencies-{{ checksum "package.json" }}
       - run:
           name: Check Lint
-          command: yarn lint-sol
+          command: yarn lint
       - run:
           name: Test Contract
           command: yarn test-contract
