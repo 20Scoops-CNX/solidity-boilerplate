@@ -1,6 +1,6 @@
 pragma solidity ^0.4.24;
 
-import "../storage/StorageState.sol";
+import "../state/StorageState.sol";
 
 contract ExampleContract is StorageState {
     

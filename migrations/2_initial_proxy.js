@@ -1,8 +1,8 @@
-const UserStorage = artifacts.require("./UserStorage")
-const Proxy = artifacts.require("./Proxy")
+const UserStorage = artifacts.require("UserStorage")
+const App = artifacts.require("App")
 
-module.exports = async function (deployer, network, accounts) {
+module.exports = async function (deployer) {
   deployer.deploy(UserStorage).then(function () {
-    return deployer.deploy(Proxy, UserStorage.address);
+    return deployer.deploy(App, UserStorage.address);
   });
 };

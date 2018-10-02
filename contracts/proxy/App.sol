@@ -1,9 +1,9 @@
 pragma solidity ^0.4.24;
 
-import "../storage/StorageState.sol";
+import "../state/StorageState.sol";
 import "../permission/Ownable.sol";
 
-contract Proxy is StorageState, Ownable {
+contract App is StorageState, Ownable {
 
     constructor(UserStorage mUserStorage) public {
         userStorage = mUserStorage;

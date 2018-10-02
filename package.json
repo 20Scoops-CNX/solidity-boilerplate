@@ -5,11 +5,11 @@
   "license": "MIT",
   "scripts": {
     "start-ganache": "ganache-cli --networkId 1234567 --blockTime=0.1 -p 8545 -m \"tumble gas embody bright agree pony smoke laptop index sight shallow hungry\"",
-    "lint-sol": "solhint \"contracts/**/*.sol\"",
+    "lint": "solhint \"contracts/**/*.sol\"",
     "test": "truffle test --network development",
     "test-coverage": "solidity-coverage",
-    "complie": "yarn lint-sol && truffle complie",
-    "deploy": "yarn lint-sol && truffle migrate"
+    "complie": "yarn lint && truffle complie",
+    "deploy": "yarn lint && truffle migrate"
   },
   "dependencies": {
     "dotenv": "^6.0.0",

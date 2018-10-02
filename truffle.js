@@ -26,6 +26,11 @@ module.exports = {
       network_id: '*',
       from: '0xd77c534aed04d7ce34cd425073a033db4fbe6a9d'
     },
+    production: {
+      provider: () => getProvider(process.env.MAINNET_URL),
+      network_id: '1',
+      from: process.env.ADDRESS_DEPLOY
+    },
     ropsten: {
       provider: () => getProvider(process.env.ROPSTEN_URL),
       network_id: '3',

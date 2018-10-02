@@ -37,4 +37,4 @@ jobs:
           destination: test-result
       - run:
           name: Deploy Contract to Rinkeby
-          command: yarn deploy-contract -- --network rinkeby
+          command: yarn deploy-contract --network rinkeby
