@@ -1,6 +1,6 @@
 {
   "name": "generator-solidity-boilerplate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "description": "solidity boilerplate",
   "license": "MIT",
@@ -13,6 +13,9 @@
     "url": "https://github.com/20Scoops-CNX/solidity-boilerplate/issues"
   },
   "homepage": "https://github.com/20Scoops-CNX/solidity-boilerplate#readme",
+  "keywords": [
+    "solidity-boilerplate"
+  ],
   "files": [
     "*",
     "generators"
