@@ -2,7 +2,7 @@
 <h1>Solidity boilerplate generator</h1>
 
 <a href="https://www.emojione.com/emoji/1f436">
-    <img height="120" width="120" alt="solidity_logo" src="https://github.com/20Scoops-CNX/solidity-boilerplate/blob/master/arts/solidity_logo.png" />
+    <img height="350" width="350" alt="solidity_logo" src="https://github.com/20Scoops-CNX/solidity-boilerplate/blob/master/arts/solidity_logo.png" />
 </a>
 
 </div>
