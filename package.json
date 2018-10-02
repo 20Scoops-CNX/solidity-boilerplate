@@ -1,9 +1,10 @@
 {
   "name": "generator-solidity-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "files": [
+    "*",
     "generators"
   ],
   "scripts": {
