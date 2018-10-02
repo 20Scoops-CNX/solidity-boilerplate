@@ -1,8 +1,8 @@
 <div align="center">
 <h1>Solidity Boilerplate Generator</h1>
 
-<a href="https://www.emojione.com/emoji/1f436">
-    <img height="350" width="350" alt="solidity_logo" src="https://github.com/20Scoops-CNX/solidity-boilerplate/blob/master/arts/solidity_logo.png" />
+<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Solidity_logo.svg/2000px-Solidity_logo.svg.png">
+    <img height="350" width="350" alt="solidity_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Solidity_logo.svg/2000px-Solidity_logo.svg.png" />
 </a>
 
 </div>
