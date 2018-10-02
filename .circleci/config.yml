@@ -30,7 +30,7 @@ jobs:
           command: yarn lint
       - run:
           name: Test Contract
-          command: yarn test-contract
+          command: yarn test-coverage
       - store_artifacts:
           name: Store Artifacts Test Result
           path: coverage
