@@ -1,8 +1,11 @@
 {
-  "name": "solidity-boilerplate",
+  "name": "generator-solidity-boilerplate",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "files": [
+    "generators"
+  ],
   "scripts": {
     "start-ganache": "ganache-cli --networkId 1234567 --blockTime=0.1 -p 8545 -m \"tumble gas embody bright agree pony smoke laptop index sight shallow hungry\"",
     "lint": "solhint \"contracts/**/*.sol\"",
@@ -15,7 +18,8 @@
     "dotenv": "^6.0.0",
     "ganache-cli": "^6.1.8",
     "truffle-hdwallet-provider": "^0.0.6",
-    "web3": "^1.0.0-beta.36"
+    "web3": "^1.0.0-beta.36",
+    "yeoman-generator": "^3.1.1"
   },
   "devDependencies": {
     "solidity-coverage": "^0.5.11",
