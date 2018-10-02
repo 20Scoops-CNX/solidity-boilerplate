@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/20Scoops-CNX/solidity-boilerplate.svg?style=svg)](https://circleci.com/gh/20Scoops-CNX/solidity-boilerplate)
+[![CircleCI](https://github.com/20Scoops-CNX/solidity-boilerplate.svg?&style=shield&circle-token=8666909adc25e84ba7ba3eba54d0c82d141d554b)](https://circleci.com/gh/20Scoops-CNX/solidity-boilerplate)
 
 <div align="center">
 <h1>Solidity Boilerplate Generator</h1>
