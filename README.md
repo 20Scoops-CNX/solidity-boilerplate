@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/20Scoops-CNX/solidity-boilerplate.svg?style=svg)](https://circleci.com/gh/20Scoops-CNX/solidity-boilerplate)
+
 <div align="center">
 <h1>Solidity Boilerplate Generator</h1>
 
