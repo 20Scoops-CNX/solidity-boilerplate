@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.4.24 <0.6.0;
 
 contract ProductStorage {
 
@@ -9,11 +9,11 @@ contract ProductStorage {
 
     Product[] public products;
 
-    function setProduct(string name, uint price) public {
+    function setProduct(string memory name, uint price) public {
         products.push(Product(name, price));
     }
 
-    function getProduct(uint index) public view returns (string name, uint price) {
+    function getProduct(uint index) public view returns (string memory name, uint price) {
         return (products[index].name, products[index].price);
     }
 

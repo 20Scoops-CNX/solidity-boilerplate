@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.4.24 <0.6.0;
 
 import "../state/StorageState.sol";
 import "../permission/Ownable.sol";
@@ -26,7 +26,7 @@ contract App is StorageState, Ownable {
         emit Upgraded(impl);
     }
 
-    function() public payable {
+    function() external payable {
         address _impl = implementation();
         require(
             _impl != address(0),

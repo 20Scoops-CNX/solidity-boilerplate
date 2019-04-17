@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.4.24 <0.6.0;
 
 contract UserStorage {
 
@@ -9,11 +9,11 @@ contract UserStorage {
 
     User[] public users;
 
-    function setUser(string username, address myAddress) public {
+    function setUser(string memory username, address myAddress) public {
         users.push(User(username, myAddress));
     }
 
-    function getUser(uint index) public view returns (string username, address myAddress) {
+    function getUser(uint index) public view returns (string memory username, address myAddress) {
         return (users[index].username, users[index].myAddress);
     }
 
