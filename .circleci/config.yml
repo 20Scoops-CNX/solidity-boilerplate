@@ -1,5 +1,5 @@
-version: 2.0
 
+version: 2.0
 jobs:
   build:
     working_directory: ~/code
@@ -11,12 +11,6 @@ jobs:
           keys:
             - v2-dependencies-{{ checksum "package.json" }}
             - v2-dependencies-
-      - run:
-          name: Install Truffle
-          command: yarn global add truffle
-      - run:
-          name: Install Solhint
-          command: yarn global add solhint
       - run:
           name: Install Dependencies
           command: yarn install
@@ -37,4 +31,10 @@ jobs:
           destination: test-result
       - run:
           name: Deploy Contract to Rinkeby
-          command: yarn deploy --network rinkeby
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ];
+            then
+              yarn deploy --network rinkeby
+            else
+              echo deploy
+            fi

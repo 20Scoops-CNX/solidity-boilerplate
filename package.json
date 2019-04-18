@@ -1,6 +1,6 @@
 {
   "name": "generator-solidity-boilerplate",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "index.js",
   "description": "solidity boilerplate",
   "license": "MIT",
@@ -22,11 +22,11 @@
   ],
   "scripts": {
     "start-ganache": "ganache-cli --networkId 1234567 --blockTime=0.1 -p 8545 -m \"tumble gas embody bright agree pony smoke laptop index sight shallow hungry\"",
-    "lint": "solhint \"contracts/**/*.sol\"",
-    "test": "truffle test --network development",
+    "lint": "node_modules/.bin/solhint \"contracts/**/*.sol\"",
+    "test": "node_modules/.bin/truffle test --network development",
     "test-coverage": "solidity-coverage",
-    "complie": "yarn lint && truffle complie",
-    "deploy": "yarn lint && truffle migrate"
+    "complie": "yarn lint && node_modules/.bin/truffle complie",
+    "deploy": "yarn lint && node_modules/.bin/truffle migrate"
   },
   "dependencies": {
     "dotenv": "^7.0.0",
@@ -37,6 +37,8 @@
   },
   "devDependencies": {
     "solidity-coverage": "^0.5.11",
+    "solhint": "^2.0.0",
+    "truffle": "^5.0.13",
     "truffle-assertions": "^0.8.2"
   }
 }
